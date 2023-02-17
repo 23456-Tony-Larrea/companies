@@ -58,15 +58,18 @@ export const Companie = sequelize.define('companies', {
     CAPITAL_SUSCRITO:{
         type: DataTypes.STRING,
     },
-    CIUU_NIVEL_1:{
+    CIIU_NIVEL_1:{
         type: DataTypes.STRING,
     },
-    CIUU_NIVEL_6:{
+    CIIU_NIVEL_6:{
         type: DataTypes.STRING,
         },
     ULTIMO_BALANCE:{
-        type: DataTypes.INTEGER,
-    }
+        type: DataTypes.STRING,
+    },
+    
      },{
     timestamps: false,
      });
+     
+Companie.sync();
